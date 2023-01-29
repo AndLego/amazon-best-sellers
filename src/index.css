@@ -1,0 +1,18 @@
+:root {
+  --gradient: radial-gradient(#0a99af, #057586);
+  --white: #fff;
+  --orange: #c45500;
+  --blue: #007185;
+  --red: #b12704;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Noto Sans JP", sans-serif;
+}

@@ -1,0 +1,125 @@
+/* Title Component */
+
+.title_container {
+  background: var(--gradient);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  padding: 8px 0 36px;
+}
+
+.title_container > h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.title_container > p {
+  font-size: 1.4rem;
+}
+
+/* SideBarMenu */
+
+.sidebar_menu {
+  min-width: 320px;
+}
+
+.sidebar_menu > p {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.sidebar_menu > h3 {
+  padding: 4px 16px;
+}
+
+.sidebar_menu p > img {
+  width: 10px;
+  height: 10px;
+}
+
+.sidebar_menu > article {
+  padding-left: 26px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Book List */
+
+.hero {
+  display: flex;
+  padding: 8px 0px 0 8px;
+}
+
+.booklist h2 {
+  font-size: 2.4rem;
+  border-left: 1px solid lightgray;
+  padding: 16px 0 20px 24px;
+}
+
+.booklist > section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Book */
+
+.book {
+  width: 340px;
+  height: 346px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.book > div:first-of-type {
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 1.4rem;
+  width: 32px;
+  padding: 2px 0 4px 7px;
+  position: relative;
+}
+
+.book > div:first-of-type span::after {
+  position: absolute;
+  content: "";
+  left: 32px;
+  top: 0;
+  border-right: 12px solid transparent;
+  border-top: 27px solid var(--orange);
+}
+
+.book img {
+  height: 200px;
+  object-fit: contain;
+  margin: 16px 0 4px;
+}
+
+.book_info {
+  padding: 0 16px;
+}
+
+.book_info > p:first-of-type {
+  color: var(--blue);
+  font-size: 1.3rem;
+  width: 100%;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book_info > p:nth-child(2) {
+  font-size: 1.2rem;
+}
+
+.book_info > p:last-of-type {
+  color: var(--red);
+  font-size: 1.4rem;
+}

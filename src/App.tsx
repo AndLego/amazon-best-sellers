@@ -1,5 +1,5 @@
 import React from "react";
-import { BookList, SideBarMenu, Title } from "./components/index";
+import { BooksContainer, SideBarMenu, Title } from "./components/index";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <Title />
       <div className="hero">
         <SideBarMenu />
-        <BookList />
+        <BooksContainer />
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-export const booksMenu: string[] = [
+export const amazonCatalog: string[] = [
   "Arts & Photography",
   "Biographies & Memoirs",
   "Books on CD",

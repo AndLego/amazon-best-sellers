@@ -1,6 +1,6 @@
 import React from "react";
 import arrowback from "../assets/arrowback.svg";
-import { booksMenu } from "../utils/booksMenu.js";
+import { amazonCatalog } from "../utils/amazonCatalog.js";
 
 const SideBarMenu = () => {
   return (
@@ -11,8 +11,12 @@ const SideBarMenu = () => {
       </p>
       <h3>Books</h3>
       <article>
-        {booksMenu.map((book) => {
-          return <p>{book}</p>;
+        {amazonCatalog.map((category, index) => {
+          return (
+            <p onClick={() => console.log(category)} key={index}>
+              {category}
+            </p>
+          );
         })}
       </article>
     </aside>
